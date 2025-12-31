@@ -85,7 +85,8 @@
             formData.price = prices[formData.trip] || 0;
 
             try {
-                const response = await fetch('http://localhost:5000/api/bookings', {
+                // Use relative path for production
+                const response = await fetch('/api/bookings', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

@@ -233,7 +233,8 @@
     <script>
         async function fetchData() {
             try {
-                const response = await fetch('http://localhost:5000/api/admin/data');
+                // Use relative path for production
+                const response = await fetch('/api/admin/data');
                 if (!response.ok) throw new Error('Failed to fetch');
 
                 const data = await response.json();
