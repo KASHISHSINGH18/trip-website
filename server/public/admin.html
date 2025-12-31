@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard - Trip</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <style>
         body {
             background-color: #f4f4f4;
@@ -114,6 +115,26 @@
         .refresh-btn:hover {
             background: var(--primary-dark);
         }
+
+        @media (max-width: 768px) {
+            .stats-cards {
+                flex-direction: column;
+            }
+
+            .data-section {
+                padding: 15px;
+            }
+
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+
+            .number {
+                font-size: 24px;
+            }
+        }
     </style>
 </head>
 
@@ -126,10 +147,13 @@
         <div class="header-list">
             <nav class="header-list-nav">
                 <ul>
+                    <i id="close-menu-btn" class="fas fa-times"></i>
                     <li><a href="index1.html">Home</a></li>
                     <li><a class="active" href="admin.html">Dashboard</a></li>
                 </ul>
             </nav>
+            <!-- Mobile Menu Icon -->
+            <i id="mobile-menu-btn" class="fas fa-bars"></i>
         </div>
     </header>
 
@@ -286,6 +310,23 @@
 
         // Load on start
         fetchData();
+
+        // Mobile Menu Script
+        const bar = document.getElementById('mobile-menu-btn');
+        const close = document.getElementById('close-menu-btn');
+        const nav = document.querySelector('.header-list-nav ul');
+
+        if (bar) {
+            bar.addEventListener('click', () => {
+                nav.classList.add('active');
+            })
+        }
+
+        if (close) {
+            close.addEventListener('click', () => {
+                nav.classList.remove('active');
+            })
+        }
     </script>
 </body>
 
