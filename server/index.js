@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index1.html'));
 });
 
-const PORT = process.env.PORT || 5000; // Use environment port for Render
+const PORT = process.env.PORT || 10000; // Render expects port 10000 by default
 
 app.listen(PORT, () => {
   console.log('Server listening on port', PORT)
