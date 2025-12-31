@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Explore the World</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 </head>
 
 <body>
@@ -17,6 +18,7 @@
             <div class="header-list">
                 <nav class="header-list-nav">
                     <ul>
+                        <i id="close-menu-btn" class="fas fa-times"></i>
                         <li><a href="index1.html">HOME</a></li>
                         <li><a href="booknow.html">Book Now</a></li>
                         <li><a class="active" href="blog.html">Blog</a></li>
@@ -24,6 +26,8 @@
                         <li><a href="contactus.html">Contact us</a></li>
                     </ul>
                 </nav>
+                <!-- Mobile Menu Icon -->
+                <i id="mobile-menu-btn" class="fas fa-bars"></i>
             </div>
         </div>
     </header>
@@ -186,6 +190,23 @@
             <p>&copy; 2025 Travel All Rights Reserved.</p>
         </div>
     </footer>
+    <script>
+        const bar = document.getElementById('mobile-menu-btn');
+        const close = document.getElementById('close-menu-btn');
+        const nav = document.querySelector('.header-list-nav ul');
+
+        if (bar) {
+            bar.addEventListener('click', () => {
+                nav.classList.add('active');
+            })
+        }
+
+        if (close) {
+            close.addEventListener('click', () => {
+                nav.classList.remove('active');
+            })
+        }
+    </script>
 </body>
 
 </html>

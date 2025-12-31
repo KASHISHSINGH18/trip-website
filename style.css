@@ -979,29 +979,226 @@ footer .copyright {
 }
 
 /* Responsive */
+/* Responsive Design Media Queries */
+
 @media (max-width: 799px) {
     .section-p1 {
         padding: 40px 40px;
     }
 
+    /* Reduce font sizes */
+    h1 {
+        font-size: 38px;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    /* Header Nav - Side Drawer */
     #header {
-        padding: 20px 40px;
+        padding: 10px 40px;
     }
 
+    .header-list-nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        /* Hidden by default */
+        height: 100vh;
+        width: 300px;
+        background-color: #fff;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+        z-index: 1000;
+    }
+
+    .header-list-nav ul.active {
+        right: 0;
+        /* Slide in */
+    }
+
+    .header-list-nav ul li {
+        margin-bottom: 25px;
+    }
+
+    /* Mobile Menu Icon */
+    #mobile-menu-btn {
+        display: block;
+        /* Visible on mobile */
+        font-size: 24px;
+        color: var(--text-dark);
+        cursor: pointer;
+        margin-left: 20px;
+    }
+
+    /* Close icon inside drawer */
+    #close-menu-btn {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: var(--text-dark);
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    /* Hero */
     #hero {
+        height: 70vh;
         padding: 0 40px;
-        background-position: 55%;
+        background-position: top 30% right 30%;
     }
 
+    /* Features */
     #features {
         justify-content: center;
     }
 
     #features .f-box {
         margin: 15px 15px;
+        width: 140px;
+        /* Smaller boxes */
+    }
+
+    /* Products / Blog Grid */
+    .product-section .pro-destinations {
+        justify-content: center;
     }
 
     .ticket-cart {
         width: 45%;
+        min-width: unset;
     }
+
+    /* Banners */
+    #banners .big-banners div {
+        min-width: 100%;
+        height: auto;
+        flex: 100%;
+    }
+
+    #banners .small-banners div {
+        min-width: 100%;
+        flex: 100%;
+        height: 200px;
+    }
+
+    /* Footer */
+    footer .col {
+        flex-basis: 45%;
+    }
+
+    /* Contact Page */
+    .contact-container,
+    .about-split {
+        flex-direction: column;
+        padding: 40px;
+        gap: 30px;
+    }
+
+    .map-container {
+        height: 250px;
+    }
+}
+
+@media (max-width: 477px) {
+    .section-p1 {
+        padding: 20px;
+    }
+
+    #header {
+        padding: 10px 20px;
+    }
+
+    #header .header-logo img {
+        height: 40px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    #hero {
+        padding: 0 20px;
+        background-position: 55%;
+    }
+
+    /* Stack products to single column */
+    .ticket-cart {
+        width: 100%;
+    }
+
+    /* Footer single column */
+    footer .col {
+        flex-basis: 100%;
+    }
+
+    /* Blog cards */
+    .blog-posts {
+        padding: 0 20px 40px;
+    }
+
+    /* Split sections */
+    .about-split,
+    .contact-container,
+    .mission-grid,
+    .founder-card {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .mission-card {
+        width: 100%;
+    }
+
+    .founder-card {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .founder-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    /* Ensure no horizontal scroll */
+    .big-banners,
+    .small-banners,
+    #features,
+    .pro-destinations {
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
+
+/* Helper for mobile menu (Default hidden on desktop) */
+#mobile-menu-btn,
+#close-menu-btn {
+    display: none;
+}
+
+@media (max-width: 799px) {
+    /* We already set display: block inside the query above, 
+       but we need to ensure the list is hidden on desktop properly handled by main CSS. 
+       Main CSS has the list as display:flex. 
+       The media query overrides it to fixed position. */
 }
