@@ -273,7 +273,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 button.normal{
     font-size: 14px;
-    font-weight: 600px;
+    font-weight: 600;
     padding: 15px 30px;
     color: #000;
     border-radius: 4px;
@@ -322,7 +322,7 @@ button.normal{
 #banners .small-banners-3{
     background-image: url(small3.jpg) ;
 }
-#banners .big-banner button{
+#banners .big-banners button{
     margin-top: 20px ;
     padding: 12px 20px;
     font-size: 15px ;
@@ -359,9 +359,9 @@ button.normal{
         font-size: 25px;
     }
     #banners .small-banners h5{
-        color: #;771818;
+        color: #771818;
     }
-    .dowload img {
+    .download img {
         width: 30%; 
         height: 50px;
         
@@ -388,7 +388,7 @@ button.normal{
         display: block ;
         padding: 8px 0;
     }
-   #footer .dowload img{
+   #footer .download img{
     border: 1px solid #08817969;
     border-radius: 7px;
    }

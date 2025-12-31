@@ -1,0 +1,32 @@
+{
+  "users": [],
+  "bookings": [
+    {
+      "_id": "1767165382784",
+      "createdAt": "2025-12-31T07:16:22.784Z",
+      "userId": null,
+      "name": "Kashish Singh",
+      "email": "singhkashishxc@gmail.com",
+      "trip": "mountain-trekking",
+      "price": 500
+    },
+    {
+      "_id": "1767166330198",
+      "createdAt": "2025-12-31T07:32:10.199Z",
+      "userId": null,
+      "name": "kshitij Kohli",
+      "email": "kshitij.kohli.kk20@gmail.com",
+      "trip": "beach-getaway",
+      "price": 800
+    }
+  ],
+  "contacts": [
+    {
+      "_id": "1767167344141",
+      "createdAt": "2025-12-31T07:49:04.141Z",
+      "name": "kshitij Kohli",
+      "email": "kshitij.kohli.kk20@gmail.com",
+      "message": "hey just wanted to enquire about trip to goa"
+    }
+  ]
+}
