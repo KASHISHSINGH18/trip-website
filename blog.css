@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between; /* This will push logo to the left and the list to the right */
+    align-items: center;
+    padding: 20px 80px;
+    background: rgba(113, 120, 118, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.header-logo img {
+    width: 60px; /* Adjust the size of your logo */
+    height: 50px;
+}
+
+.header-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.header-list li {
+    padding: 0 20px;
+}
+
+.header-list a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.header-list a:hover,
+.header-list a:active {
+    color: #088178;
+}
+
+
+main {
+    margin-top: 100px;
+}
+
+.blog-header {
+    text-align: center;
+    padding: 40px;
+}
+
+.blog-header h2 {
+    font-size: 40px;
+    color: #222;
+}
+
+.blog-header p {
+    font-size: 18px;
+    color: #465b52;
+}
+
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.post {
+    width: 300px;
+    margin: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.post-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.post-content {
+    padding: 20px;
+}
+
+.post h3 {
+    font-size: 24px;
+    color: #222;
+}
+
+.post p {
+    font-size: 16px;
+    color: #465b52;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    color: #088178;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid #088178;
+}
+
+.read-more:hover {
+    color: #065f59;
+    border-bottom: 2px solid #065f59;
+}
+
+#footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 75px;
+    background-color: #ececec;
+    color: rgb(109, 109, 109);
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+#footer p {
+    text-decoration: none;
+    color: rgb(109, 109, 109);
+}

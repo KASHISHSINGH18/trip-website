@@ -1,0 +1,161 @@
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* About Header */
+.about-header {
+    background-color: #088178;
+    color: white;
+    padding: 30px 0; /* Reduced padding for smaller background */
+}
+
+.about-header h1 {
+    font-size: 40px; /* Smaller heading size */
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+.about-header p {
+    font-size: 16px; /* Slightly smaller font for the paragraph */
+    color: #dfe7e1;
+}
+
+/* Header Styling */
+#header {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(113, 120, 118, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 20px 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+#header ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+#header ul li {
+    padding: 0 20px;
+    position: relative;
+}
+
+#header ul a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#header ul a:hover,
+#header ul a:active {
+    color: #5cddd4;
+}
+
+#header ul li a:hover::after,
+#header ul li a:active::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+}
+
+#header .header-logo img {
+    width: 60px;
+    height: 50px;
+}
+
+/* About Us Page Styles */
+main {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.about-header {
+    background-color: #088178;
+    color: white;
+    padding: 50px 0;
+}
+
+.about-header h1 {
+    font-size: 60px;
+}
+
+.about-header p {
+    font-size: 18px;
+    color: #dfe7e1;
+}
+
+/* About Content Section */
+.about-content {
+    padding: 40px 0;
+}
+
+.about-content h2 {
+    font-size: 35px;
+    color: #088178;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #465b52;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Founder Section */
+.founder-section {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.founder-section h2 {
+    font-size: 30px;
+    color: #088178;
+    margin-bottom: 20px;
+}
+
+
+.founder-image img {
+    width: 30%;
+    height: 40%;
+    object-fit: cover; /* Ensures the image covers the circle without distortion */
+}
+.founder-section p {
+    font-size: 18px;
+    color: #465b52;
+    max-width: 600px;
+    margin: 20px auto;
+}
+/* Footer Styling */
+#footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ececec;
+    margin-top: 60px;
+}
+
+#footer p {
+    font-size: 14px;
+    color: #088178;
+}
